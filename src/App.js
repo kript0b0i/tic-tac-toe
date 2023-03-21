@@ -4,6 +4,7 @@ import React, {useState} from 'react';
 import { Board } from './components/Board';
 import { Scoreboard } from './components/Scoreboard';
 import { Reset } from './components/Reset';
+import { Signature } from './Signature';
 
 
 function App() {
@@ -73,6 +74,7 @@ function App() {
       <Scoreboard scores={scores} xPlaying={xPlaying}/>
       <Board board={board} onClick={gameOver ? resetBoard: handleBoxClick}/>
       <Reset resetBoard={resetBoard}/>
+      <Signature/>
     </div>
   );
 }
