@@ -1,7 +1,7 @@
 {
   "name": "tic-tac-toe",
   "version": "0.1.0",
-  "homepage": "https://agogte.github.io/tic-tac-toe",
+  "homepage": "https://kript0b0i.github.io//tic-tac-toe",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
