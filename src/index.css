@@ -1,15 +1,11 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  background-color: #efefef;
+  font-family: "Fredoka", sans-serif;
 }
 
 /* Board Component */
@@ -17,22 +13,40 @@ code {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 auto;
-  max-width: 90vw; /* Use a maximum width of 90vw to ensure that the board fits on smaller screens */
+  align-items: center;
+  gap: 3vw; /* Set the gap between the buttons to 1% of the viewport width */
+  margin: 1vh auto;;
+  max-width: 100%;
 }
 
+
 .board button {
-  font-size: 6vw; /* Use a font size of 6vw to ensure that the buttons are large enough for mobile screens */
-  height: 20vw; /* Use a height of 20vw to ensure that the buttons are proportional to the font size */
-  width: 20vw; /* Use a width of 20vw to ensure that the buttons are proportional to the font size */
+  font-size: 5vw; /* Use a font size that scales with the viewport width for mobile screens */
+  height: 10vh; /* Use a height that scales with the viewport height for mobile screens */
+  width: 20vw; /* Use a width that scales with the viewport width for mobile screens */
+  margin: 0.5vw; /* Add some margin between the buttons */
+}
+
+/* Media query for tablet screens */
+@media only screen and (min-width: 768px) {
+  .board button {
+    font-size: 3vw; /* Use a font size that scales with the viewport width for tablet screens */
+    height: 10vh; /* Use a height that scales with the viewport height for tablet screens */
+    width: 10vw; /* Use a width that scales with the viewport width for tablet screens */
+    margin: -1vw; /* Add some margin between the buttons */
+  }
 }
 
 /* Media query for desktop screens */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
+  .board {
+    max-width: 1200px; /* Set the maximum width of the board to 1200px for desktop screens */
+  }
+
   .board button {
-    font-size: 50px; /* Use a font size of 50px for desktop screens */
-    height: 150px; /* Use a height of 150px for desktop screens */
-    width: 150px; /* Use a width of 150px for desktop screens */
+    font-size: 2rem; /* Use a fixed font size for desktop screens */
+    height: 8rem; /* Use a fixed height for desktop screens */
+    width: 8rem; /* Use a fixed width for desktop screens */
   }
 }
 
@@ -42,15 +56,15 @@ code {
 }
 
 .scoreboard h2 {
-  font-size: 4vw; /* Use a font size of 4vw to ensure that the heading is large enough for mobile screens */
+  font-size: 2rem;
 }
 
 /* Reset Component */
 .reset button {
-  font-size: 4vw; /* Use a font size of 4vw to ensure that the button is large enough for mobile screens */
+  font-size: 2rem;
 }
 
 /* Signature Component */
 .signature {
-  font-size: 3vw; /* Use a font size of 3vw to ensure that the text is large enough for mobile screens */
+  font-size: 1.5rem;
 }
