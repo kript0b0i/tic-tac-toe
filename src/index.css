@@ -11,3 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Board Component */
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 90vw; /* Use a maximum width of 90vw to ensure that the board fits on smaller screens */
+}
+
+.board button {
+  font-size: 6vw; /* Use a font size of 6vw to ensure that the buttons are large enough for mobile screens */
+  height: 20vw; /* Use a height of 20vw to ensure that the buttons are proportional to the font size */
+  width: 20vw; /* Use a width of 20vw to ensure that the buttons are proportional to the font size */
+}
+
+/* Scoreboard Component */
+.scoreboard {
+  margin-bottom: 20px;
+}
+
+.scoreboard h2 {
+  font-size: 4vw; /* Use a font size of 4vw to ensure that the heading is large enough for mobile screens */
+}
+
+/* Reset Component */
+.reset button {
+  font-size: 4vw; /* Use a font size of 4vw to ensure that the button is large enough for mobile screens */
+}
+
+/* Signature Component */
+.signature {
+  font-size: 3vw; /* Use a font size of 3vw to ensure that the text is large enough for mobile screens */
+}
+
