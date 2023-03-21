@@ -74,7 +74,7 @@ function App() {
       <Scoreboard scores={scores} xPlaying={xPlaying}/>
       <Board
         board={board}
-        onTouchEnd={(gameOver) ? resetBoard : handleBoxTouch}
+        onTouchEnd={gameOver ? resetBoard : handleBoxClick}
       />
       <Reset resetBoard={resetBoard}/>
       <Signature/>
