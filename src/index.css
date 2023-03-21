@@ -27,6 +27,15 @@ code {
   width: 20vw; /* Use a width of 20vw to ensure that the buttons are proportional to the font size */
 }
 
+/* Media query for desktop screens */
+@media only screen and (min-width: 768px) {
+  .board button {
+    font-size: 50px; /* Use a font size of 50px for desktop screens */
+    height: 150px; /* Use a height of 150px for desktop screens */
+    width: 150px; /* Use a width of 150px for desktop screens */
+  }
+}
+
 /* Scoreboard Component */
 .scoreboard {
   margin-bottom: 20px;
@@ -45,4 +54,3 @@ code {
 .signature {
   font-size: 3vw; /* Use a font size of 3vw to ensure that the text is large enough for mobile screens */
 }
-
