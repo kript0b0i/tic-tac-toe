@@ -16,5 +16,21 @@
     width: 100%;
     text-align: center;
     padding: 1rem 0;
-    
+
+}
+
+.x-score {
+    color: rgb(255, 70, 37);
+    border-bottom: 5px solid rgb(255, 70, 37);
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.o-score {
+    color: rgb(45, 135, 255);
+    border-bottom: 5px solid rgb(45, 135, 255);
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.inactive{
+    border-bottom: 5px solid transparent;
 }
