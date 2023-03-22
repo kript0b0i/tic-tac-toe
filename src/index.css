@@ -21,11 +21,12 @@ body {
 
 
 .board button {
-  font-size: 5vw; /* Use a font size that scales with the viewport width for mobile screens */
   height: 10vh; /* Use a height that scales with the viewport height for mobile screens */
   width: 20vw; /* Use a width that scales with the viewport width for mobile screens */
   margin: 0.5vw; /* Add some margin between the buttons */
+
 }
+
 
 /* Media query for tablet screens */
 @media only screen and (min-width: 768px) {
@@ -44,7 +45,6 @@ body {
   }
 
   .board button {
-    font-size: 2rem; /* Use a fixed font size for desktop screens */
     height: 8rem; /* Use a fixed height for desktop screens */
     width: 8rem; /* Use a fixed width for desktop screens */
   }
