@@ -72,10 +72,7 @@ function App() {
   return (
     <div className="App">
       <Scoreboard scores={scores} xPlaying={xPlaying}/>
-      <Board
-        board={board}
-        onTouchEnd={gameOver ? resetBoard : handleBoxClick}
-      />
+      <Board board={board} onClick={gameOver ? resetBoard: handleBoxClick}/>
       <Reset resetBoard={resetBoard}/>
       <Signature/>
     </div>
@@ -83,3 +80,4 @@ function App() {
 }
 
 export default App;
+
