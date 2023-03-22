@@ -3,6 +3,6 @@ import './Signature.css';
 
 export const Signature = () => {
   return (
-    <div className='sig'> <center>© Advait Gogte </center></div>
+    <div className='sig'> <center>© Luis Mendoza </center></div>
   )
 }
