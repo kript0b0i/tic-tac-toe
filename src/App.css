@@ -7,4 +7,79 @@ body {
   background-color: #efefef;
   font-family: "Fredoka", sans-serif;
 }
+/* Board Component */
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw; /* Set the gap between the buttons to 1% of the viewport width */
+  margin: 1vh auto;;
+  max-width: 100%;
+}
+
+
+.board button {
+  height: 10vh; /* Use a height that scales with the viewport height for mobile screens */
+  width: 20vw; /* Use a width that scales with the viewport width for mobile screens */
+  margin: 0.5vw; /* Add some margin between the buttons */
+
+}
+
+
+/* Media query for tablet screens */
+@media only screen and (min-width: 768px) {
+  .board button {
+    font-size: 3vw; /* Use a font size that scales with the viewport width for tablet screens */
+    height: 10vh; /* Use a height that scales with the viewport height for tablet screens */
+    width: 10vw; /* Use a width that scales with the viewport width for tablet screens */
+    margin: -1vw; /* Add some margin between the buttons */
+  }
+}
+
+/* Media query for desktop screens */
+@media only screen and (min-width: 1200px) {
+  .board {
+    max-width: 1200px; /* Set the maximum width of the board to 1200px for desktop screens */
+  }
+
+  .board button {
+    height: 8rem; /* Use a fixed height for desktop screens */
+    width: 8rem; /* Use a fixed width for desktop screens */
+  }
+}
+
+
+/* Media query for smaller screens (iPhone, etc.) */
+@media only screen and (max-width: 480px) {
+.board button {
+  font-size: 5vw; /* Use a font size that scales with the viewport width for smaller screens */
+  height: 6vh; /* Use a height that scales with the viewport height for smaller screens */
+  width: 20vw; /* Use a width that scales with the viewport width for smaller screens */
+  margin: 1vw; /* Add some margin between the buttons */
+}
+
+.board {
+gap: 2vw; /* Set the gap between the buttons to 2% of the viewport width for smaller screens */
+}
+}
+
+/* Scoreboard Component */
+.scoreboard {
+  margin-bottom: 20px;
+}
+
+.scoreboard h2 {
+  font-size: 2rem;
+}
+
+/* Reset Component */
+.reset button {
+  font-size: 2rem;
+}
+
+/* Signature Component */
+.signature {
+  font-size: 1.5rem;
+}
 
